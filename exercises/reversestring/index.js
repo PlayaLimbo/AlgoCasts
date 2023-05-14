@@ -6,6 +6,12 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+// function reverse(str) {
+//*  solution one
+//     const arr = str.split("");
+//     arr.reverse();
+//     return arr.join("");
+// }
 function reverse(str) {
     return str.split("").reduce((group, el) => {
         return el + group;
