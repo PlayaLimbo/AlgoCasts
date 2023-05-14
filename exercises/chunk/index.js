@@ -8,6 +8,21 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-function chunk(array, size) {}
+function chunk(array, size) {
+    return array.reduce((group, item, i) => {
+        // find the index od the chunk
+        const indexOfChunk = Math.floor(i / size);
+        // create the array, it does not exists yet
+
+        if (!group[indexOfChunk]) {
+            group[indexOfChunk] = [];
+        }
+        // populate the current array
+
+        group[indexOfChunk].push(item);
+
+        return group;
+    }, []);
+}
 
 module.exports = chunk;
