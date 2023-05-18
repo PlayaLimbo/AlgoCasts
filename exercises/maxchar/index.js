@@ -9,7 +9,7 @@
 // key value pairs that contain the key:and a value of 1
 // so in essence the obj will look like this fro the string: 'hello':
 // const obj = {h:1,e:1,l:2,o:1}
-// so we need to find a way to create a object like that assign it a initValue of 1
+// so we need to find a way to create a object like that and assign it a initValue of 1
 // and increase that value if the character appears again
 // to do this we start by creating the object responsible for storing our key value pairs
 // at first it will be empty but we will populate it eventually
