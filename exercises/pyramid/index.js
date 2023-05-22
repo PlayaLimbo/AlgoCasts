@@ -10,10 +10,16 @@
 //       ' # '
 //       '###'
 //   pyramid(3)
-//       '  #  '
-//       ' ### '
-//       '#####'
+//       '  #  ' == idx=0 - space=2, step=1, n=3 -- (2 * 0 + 1) = 1 --(3 - 0 - 1)==2
+//       ' ### ' == idx=1 - space=1, step=3, n=3 -- (2 * 1 + 1) = 3
+//       '#####' == idx=2 - space=0, step=5, n=3 -- (2 * 2 + 1) = 5
 
-function pyramid(n) {}
+function pyramid(n) {
+    for (let i = 0; i < n; i++) {
+        const steps = "#".repeat(2 * i + 1);
+        const space = " ".repeat(n - i - 1);
+        console.log(space + steps + space);
+    }
+}
 
 module.exports = pyramid;

@@ -17,6 +17,15 @@
 //       '### '
 //       '####'
 
+// * solution 1
+// function steps(n) {
+//     for (let idx = 1; idx <= n; idx++) {
+//         let row = "#".repeat(idx); // Create a string with '#' repeated i times
+//         let spaces = " ".repeat(n - idx); // Create a string with spaces for the right-hand side
+//         console.log("-", row, spaces, "-");
+//     }
+// }
+
 function steps(n) {}
 
 module.exports = steps;
