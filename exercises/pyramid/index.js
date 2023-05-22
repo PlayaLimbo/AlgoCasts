@@ -23,3 +23,8 @@ function pyramid(n) {
 }
 
 module.exports = pyramid;
+// - the answer  - i am too detailed oriented
+// - brief explanation - i like to take pride in what i do
+// - example - i would not send a undercooked taco to a costumer
+// - how it applies - i would not send a under finished project to a client
+// - how to handle it
