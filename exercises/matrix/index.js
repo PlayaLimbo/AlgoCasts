@@ -26,32 +26,32 @@ function matrix(n) {
     let startRow = 0;
     let endCol = n - 1;
     let endRow = n - 1;
-    // while (startCol <= endCol && startRow <= endRow) {
-    //     // top row
-    //     for (let i = startCol; i <= endCol; i++) {
-    //         matrix[startRow][i] = counter;
-    //         counter++;
-    //     }
-    //     startRow++;
-    //     // right column
-    //     for (let i = startRow; i <= endRow; i++) {
-    //         matrix[i][endCol] = counter;
-    //         counter++;
-    //     }
-    //     endCol--;
-    //     // bottom row
-    //     for (let i = endCol; i >= startCol; i--) {
-    //         matrix[endRow][i] = counter;
-    //         counter++;
-    //     }
-    //     endRow--;
-    //     // start col
-    //     for (let i = endRow; i >= startRow; i--) {
-    //         matrix[i][startCol] = counter;
-    //         counter++;
-    //     }
-    //     startCol++;
-    // }
+    while (startCol <= endCol && startRow <= endRow) {
+        // top row
+        for (let i = startCol; i <= endCol; i++) {
+            matrix[startRow][i] = counter;
+            counter++;
+        }
+        startRow++;
+        // right column
+        for (let i = startRow; i <= endRow; i++) {
+            matrix[i][endCol] = counter;
+            counter++;
+        }
+        endCol--;
+        // bottom row
+        for (let i = endCol; i >= startCol; i--) {
+            matrix[endRow][i] = counter;
+            counter++;
+        }
+        endRow--;
+        // start col
+        for (let i = endRow; i >= startRow; i--) {
+            matrix[i][startCol] = counter;
+            counter++;
+        }
+        startCol++;
+    }
 
     console.log(matrix);
     return matrix;
